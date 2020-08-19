@@ -1,5 +1,24 @@
 const chalk = require('chalk');
+const { JSDOM } = require('jsdom');
 
+// add window and document
+window = new JSDOM().window;
+document = window.document;
+
+// add helper for triggering events
+triggerEvent = (element, type, options) => {
+    let event = document.createEvent('Event');
+    event.initEvent(type, true, true);
+    event = Object.assign(event, options);
+    element.dispatchEvent(event);
+}
+
+simulateKeyboardEvent = (element, type, key) => {
+    element.value += key;
+    triggerEvent(element, type, {key});
+}
+
+// improve console styling
 const originalConsoleLog = console.log;
 const log = (...args) => originalConsoleLog(time(), ...args);
 
