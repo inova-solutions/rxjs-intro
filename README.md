@@ -29,7 +29,11 @@
   - withLatestFrom
   - forkJoin
 
-## Resources
+## 01 Observable Aufbau
+
+- `basic-observable.js`: a basic observable using an observer to push content or an error. Basic subscriptions plus a shorthand.
+
+## 99 Resources
 
 - [Learn RxJS](https://www.learnrxjs.io/)
 - [RxJS Docs](https://rxjs-dev.firebaseapp.com/guide/overview)
