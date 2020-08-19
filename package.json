@@ -1,0 +1,11 @@
+{
+  "name": "rxjs-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "README.md",
+  "author": "Markus Chiarot, inova:solutions AG",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.6.2"
+  }
+}
