@@ -13,23 +13,25 @@
 - [x] map
 - [x] tap
 - [x] filter
-- first
-- take
-- takeUntil
-- finalize
-- catchError
-- delay
+- [ ] first
+- [ ] take
+- [ ] takeUntil
+- [ ] finalize
+- [ ] catchError
+- [ ] delay
 - [x] debounce
 
 ## 03 Advanced Operators
 
-- mergeMap / flatMap
-- combineLatest
-- zip
-- withLatestFrom
-- forkJoin
+- [ ] mergeMap / flatMap
+- [ ] combineLatest
+- [ ] zip
+- [ ] withLatestFrom
+- [ ] forkJoin
 
 ## 04 Tasks
+
+Solve some tasks to try out some Operators.
 
 ## 99 Resources
 
