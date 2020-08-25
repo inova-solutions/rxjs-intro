@@ -14,22 +14,22 @@ This repository explains basic Rx/JS concepts by providing some documented examp
 
 Operators can be used in `.pipe()` method of the observable. They can be chained and executed consecutively.
 
-- [x] map
-- [x] tap
-- [x] filter
-- [x] take
-- [x] takeUntil
+- [x] [map](./02_Basic-Operators/map.js)
+- [x] [tap](./02_Basic-Operators/tap.js)
+- [x] [filter](./02_Basic-Operators/filter.js)
+- [x] [take](./02_Basic-Operators/take.js)
+- [x] [takeUntil](./02_Basic-Operators/takeUntil.js)
 - [ ] [first](https://www.learnrxjs.io/learn-rxjs/operators/filtering/first)
 - [ ] [finalize](https://www.learnrxjs.io/learn-rxjs/operators/utility/finalize)
 - [ ] [catchError](https://www.learnrxjs.io/learn-rxjs/operators/error_handling/catch)
 - [ ] [delay](https://www.learnrxjs.io/learn-rxjs/operators/utility/delay)
-- [x] debounce
-- [x] mergeMap / flatMap
+- [x] [debounce](./02_Basic-Operators/debounce.js)
+- [x] [mergeMap / flatMap](./02_Basic-Operators/mergeMap.js)
 
 ## 03 Combinator Operators
 
-- [x] forkJoin
-- [x] combineLatest
+- [x] [forkJoin](./03_Combinator-Operators/forkJoin.js)
+- [x] [combineLatest](./03_Combinator-Operators/combineLatest.js)
 - [ ] [zip](https://www.learnrxjs.io/learn-rxjs/operators/combination/zip)
 - [ ] [withLatestFrom](https://www.learnrxjs.io/learn-rxjs/operators/combination/withlatestfrom)
 
