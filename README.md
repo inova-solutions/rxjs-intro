@@ -13,21 +13,21 @@
 - [x] map
 - [x] tap
 - [x] filter
+- [x] take
+- [x] takeUntil
 - [ ] first
-- [ ] take
-- [ ] takeUntil
 - [ ] finalize
 - [ ] catchError
 - [ ] delay
 - [x] debounce
+- [x] mergeMap / flatMap
 
-## 03 Advanced Operators
+## 03 Combinator Operators
 
-- [ ] mergeMap / flatMap
-- [ ] combineLatest
+- [x] forkJoin
+- [x] combineLatest
 - [ ] zip
 - [ ] withLatestFrom
-- [ ] forkJoin
 
 ## 04 Tasks
 
