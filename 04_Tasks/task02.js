@@ -1,25 +1,17 @@
 require('../00_Source/common');
 const { of } = require("rxjs");
+const { delay, repeat, takeUntil } = require('rxjs/operators');
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
+// create an observable with an initial value of true
+// the observable should get a value of false after 3000ms
+// check the console to see how many cars can pass before the traffic light turns red
+const trafficLight;
 
-function fruitsAPI() {
-    return of(...shuffleArray(['Apple', 'Banana', 'Pear', 'Orange', 'Mango', 'Pinapple']));
-}
+// this spawns a car every 500ms, up to 10 cars
+const car = of('car').pipe(delay(500), repeat(100));
 
-function weekdaysAPI() {
-    return of('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
-}
-
-
-// for every weekday associate the first fruit from the API
-// build a short phrase for every weekday in this form:
-// Menu for Monday: Apple
-// Menu for Tuesday: Mango
-// ...
+// cars drive through until the trafficLight turns red (observable is false)
+car.pipe(takeUntil(trafficLight)).subscribe({
+    next() { console.log('car drives through'); },
+    complete() { console.log('traffic light turned red'); }
+});
