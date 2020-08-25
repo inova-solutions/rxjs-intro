@@ -20,7 +20,7 @@ Operators can be used in `.pipe()` method of the observable. They can be chained
 - [x] [take](./02_Basic-Operators/take.js)
 - [x] [takeUntil](./02_Basic-Operators/takeUntil.js)
 - [ ] [first](https://www.learnrxjs.io/learn-rxjs/operators/filtering/first)
-- [ ] [finalize](https://www.learnrxjs.io/learn-rxjs/operators/utility/finalize)
+- [x] [finalize](./02_Basic-Operators/finalize.js)
 - [ ] [catchError](https://www.learnrxjs.io/learn-rxjs/operators/error_handling/catch)
 - [ ] [delay](https://www.learnrxjs.io/learn-rxjs/operators/utility/delay)
 - [x] [debounce](./02_Basic-Operators/debounce.js)
