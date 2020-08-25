@@ -27,7 +27,7 @@ const time = () => {
     const h = d.getHours().toString().padStart(2, '0');
     const m = d.getMinutes().toString().padStart(2, '0');
     const s = d.getSeconds().toString().padStart(2, '0');
-    const ms = d.getMilliseconds();
+    const ms = d.getMilliseconds().toString().padStart(3, '0');
     return chalk.grey(`[${h}:${m}:${s}.${ms}]`);
 }
 
