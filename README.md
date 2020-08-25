@@ -1,5 +1,7 @@
 # Rx/JS
 
+This repository explains basic Rx/JS concepts by providing some documented examples. Additionally there are some [tasks](./04_Tasks) to apply those concepts and further your knowledge.
+
 ## 01 Observable Aufbau
 
 - `basic-observable.js`: a basic observable using an observer to push content or an error. Basic subscriptions plus a shorthand.
