@@ -10,15 +10,17 @@
 
 ## 02 Basic Operators
 
+Operators can be used in `.pipe()` method of the observable. They can be chained and executed consecutively.
+
 - [x] map
 - [x] tap
 - [x] filter
 - [x] take
 - [x] takeUntil
-- [ ] first
-- [ ] finalize
-- [ ] catchError
-- [ ] delay
+- [ ] [first](https://www.learnrxjs.io/learn-rxjs/operators/filtering/first)
+- [ ] [finalize](https://www.learnrxjs.io/learn-rxjs/operators/utility/finalize)
+- [ ] [catchError](https://www.learnrxjs.io/learn-rxjs/operators/error_handling/catch)
+- [ ] [delay](https://www.learnrxjs.io/learn-rxjs/operators/utility/delay)
 - [x] debounce
 - [x] mergeMap / flatMap
 
@@ -26,8 +28,8 @@
 
 - [x] forkJoin
 - [x] combineLatest
-- [ ] zip
-- [ ] withLatestFrom
+- [ ] [zip](https://www.learnrxjs.io/learn-rxjs/operators/combination/zip)
+- [ ] [withLatestFrom](https://www.learnrxjs.io/learn-rxjs/operators/combination/withlatestfrom)
 
 ## 04 Tasks
 
