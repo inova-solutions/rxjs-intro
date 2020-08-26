@@ -8,7 +8,7 @@ const unsubscribe = new Subject();
 const sub = new Subject();
 
 // subscribe to observable until commanded to unsubscribe
-sub.pipe(takeUntil(unsubscribe)).subscribe({
+sub.asObservable().pipe(takeUntil(unsubscribe)).subscribe({
     next(x) { console.log(x); },
     complete() { console.success('[Complete]'); }
 });

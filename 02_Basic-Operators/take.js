@@ -4,13 +4,13 @@ const { take } = require("rxjs/operators");
 
 const sub = new Subject();
 
-sub.pipe(take(3)).subscribe({
+sub.asObservable().pipe(take(3)).subscribe({
     next(x) { console.log(x); },
     complete() { console.success('[Complete]'); }
 });
 
 // without take the observable isn't completed
-// sub.subscribe({
+// sub.asObservable().subscribe({
 //     next(x) { console.log(x); },
 //     complete() { console.success('[Complete]'); }
 // });

@@ -24,3 +24,12 @@ function uploadData(data) {
 getData()
     .pipe(mergeMap(data => uploadData(data)))
     .subscribe(x => console.log('Data ready:', x));
+
+
+   
+// bad practice anti pattern
+// getData().subscribe(data => {
+//     uploadData(data).subscribe(uploadedData => {
+//         console.log('Data ready:', uploadData);
+//     });
+// });

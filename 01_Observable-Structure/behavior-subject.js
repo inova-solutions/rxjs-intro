@@ -12,7 +12,7 @@ subject.next('Second');
 
 // subscribe to observable
 // it receives an initial value and then all following
-subject.subscribe(x => console.log(x));
+subject.asObservable().subscribe(x => console.log(x));
 
 // send third data
 subject.next('Third');
@@ -22,6 +22,6 @@ subject.complete();
 
 // BehaviorSubject with initial value
 // const subject2 = new BehaviorSubject('Initial');
-// subject2.subscribe(x => console.log(x));
+// subject2.asObservable().subscribe(x => console.log(x));
 // subject2.next('Another');
 // subject2.complete();

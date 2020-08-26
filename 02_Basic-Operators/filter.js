@@ -5,7 +5,7 @@ const { filter } = require("rxjs/operators");
 const subject = new Subject();
 
 // only allow odd numbers
-subject
+subject.asObservable()
     .pipe(filter(n => n % 2))
     .subscribe(n => console.log(n));
 

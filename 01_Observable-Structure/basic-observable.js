@@ -20,7 +20,7 @@ const obs = new Observable(subscriber => {
 });
 
 // Subscribe to an observable
-obs.subscribe({
+const subscription = obs.subscribe({
   // when new data comes in
   next(x) { console.log(x); },
 
@@ -31,5 +31,8 @@ obs.subscribe({
   complete() { console.success('[Complete]'); }
 });
 
+// Unsubscribe
+// setTimeout(() => subscription.unsubscribe(), 500);
+
 // Shorthand subscription
-// obs.subscribe(x => console.log(x), err => console.error(err.message));
+// obs.subscribe(x => console.log(x), err => console.error(err.message), () => console.success('[Complete]'));

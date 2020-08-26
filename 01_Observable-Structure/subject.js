@@ -12,7 +12,7 @@ subject.next('Second');
 
 // subscribe to observable
 // it receives only second data
-subject.subscribe(x => console.log(x));
+subject.asObservable().subscribe(x => console.log(x));
 
 // send third data
 subject.next('Third');
