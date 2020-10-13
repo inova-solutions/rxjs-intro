@@ -30,6 +30,6 @@ getData()
 // bad practice anti pattern
 // getData().subscribe(data => {
 //     uploadData(data).subscribe(uploadedData => {
-//         console.log('Data ready:', uploadData);
+//         console.log('Data ready:', uploadedData);
 //     });
 // });

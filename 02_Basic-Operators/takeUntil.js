@@ -18,7 +18,7 @@ sub.next(2);
 sub.next(3);
 
 // command to unsubscribe
-unsubscribe.next(true);
+unsubscribe.next();
 
 sub.next(4);
 sub.next(5);
