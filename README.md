@@ -42,4 +42,4 @@ Solve some tasks to try out some Operators.
 - [Learn RxJS](https://www.learnrxjs.io/)
 - [RxJS Docs](https://rxjs-dev.firebaseapp.com/guide/overview)
 - [Marbles RxJS Visualisation](https://rxmarbles.com/)
-- [Differences forkJoin, zip, combineLatest, withLatestFrom](https://scotch.io/tutorials/rxjs-operators-for-dummies-forkjoin-zip-combinelatest-withlatestfrom)
+- [Differences forkJoin, zip, combineLatest, withLatestFrom](https://www.digitalocean.com/community/tutorials/rxjs-operators-forkjoin-zip-combinelatest-withlatestfrom)
